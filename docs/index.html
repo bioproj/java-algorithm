@@ -17,6 +17,14 @@
   <div id="app"></div>
   <!-- <script src="js/docsify-edit-on-github.js"></script> -->
   <script src="js/docsify-plugin-carbon@1.js"></script>
+  <script>
+    let editUrl = ""
+    if(window.location.host=="bioproj.gitee.io"){
+      editUrl="https://gitee.com/bioproj/java-algorithm/blob/master/docs/"
+    }else{
+      editUrl="https://github.com/bioproj/java-algorithm/blob/master/docs/"
+    }
+  </script>
   <!-- <script src="//cdn.jsdelivr.net/npm/docsify-plugin-carbon@1"></script> -->
   <script>
     window.$docsify = {
@@ -49,7 +57,7 @@
                 .replace('@master', '/blob/master');
             }else {
               url =
-                'https://github.com/bioproj/java-algorithm/blob/master/docs/' +
+              editUrl +
                 vm.route.file;
             }
             var editHtml = '[:memo: Edit Document](' + url + ')\n';
