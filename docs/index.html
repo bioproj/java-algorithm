@@ -22,12 +22,13 @@
     window.$docsify = {
       name: 'java algorithm',
       loadSidebar: true,
+      loadSidebar:"sidebar.md",
       subMaxLevel: 3,
       formatUpdated: '{YYYY}-{MM}-{DD}',
       topMargin: 0,
       // repo: 'http://192.168.10.178:3000/mbiolance-it/admin-doc/',
       alias: {
-        '/.*/_sidebar.md': '/_sidebar.md'
+        '/.*/sidebar.md': '/sidebar.md'
       }, plugins: [
         // DocsifyCarbon.create('CEBI6KQE', 'docsifyjsorg'),
         function (hook, vm) {
