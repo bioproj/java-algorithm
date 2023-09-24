@@ -9,8 +9,8 @@
   <meta name="viewport"
     content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
   <!-- <link rel="stylesheet" href="//unpkg.com/docsify/lib/themes/vue.css"> -->
-   <link rel="stylesheet" href="css/vue.css">
-   <link rel="icon" class="js-site-favicon" type="image/svg+xml" href="favicon.ico">
+  <link rel="stylesheet" href="css/vue.css">
+  <link rel="icon" class="js-site-favicon" type="image/svg+xml" href="favicon.ico">
 </head>
 
 <body>
@@ -19,10 +19,10 @@
   <script src="js/docsify-plugin-carbon@1.js"></script>
   <script>
     let editUrl = ""
-    if(window.location.host=="bioproj.gitee.io"){
-      editUrl="https://gitee.com/bioproj/java-algorithm/blob/master/docs/"
-    }else{
-      editUrl="https://github.com/bioproj/java-algorithm/blob/master/docs/"
+    if (window.location.host == "bioproj.gitee.io") {
+      editUrl = "https://gitee.com/bioproj/java-algorithm/blob/master/docs/"
+    } else {
+      editUrl = "https://github.com/bioproj/java-algorithm/blob/master/docs/"
     }
   </script>
   <!-- <script src="//cdn.jsdelivr.net/npm/docsify-plugin-carbon@1"></script> -->
@@ -30,10 +30,13 @@
     window.$docsify = {
       name: 'java algorithm',
       loadSidebar: true,
-      loadSidebar:"sidebar.md",
+      loadSidebar: "sidebar.md",
       subMaxLevel: 3,
       formatUpdated: '{YYYY}-{MM}-{DD}',
       topMargin: 0,
+      requestHeaders: {
+        'cache-control': 'max-age=0',
+      },
       // repo: 'http://192.168.10.178:3000/mbiolance-it/admin-doc/',
       alias: {
         '/.*/sidebar.md': '/sidebar.md'
@@ -51,13 +54,13 @@
                 .replace('cdn.jsdelivr.net/gh', 'github.com')
                 .replace('@master', '/blob/master');
             } else if (/github\.githubassets\.com/.test(vm.route.file)) {
-              console.log( vm.route.file)
+              console.log(vm.route.file)
               url = vm.route.file
                 .replace('cdn.jsdelivr.net/gh', 'github.com')
                 .replace('@master', '/blob/master');
-            }else {
+            } else {
               url =
-              editUrl +
+                editUrl +
                 vm.route.file;
             }
             var editHtml = '[:memo: Edit Document](' + url + ')\n\n';
@@ -87,15 +90,15 @@
   </script>
 
   <!--  &lt;!&ndash; CDN files for docsify-katex &ndash;&gt;-->
-   <script src="js/katex.min.js"></script>
-   <link rel="stylesheet" href="css/katex.min.css" />
-   <script src="js/marked@3.js"></script>
-   <script src="js/docsify-katex.js"></script>
-   <script>
-    baseURL="https://github.githubassets.com/images/icons/emoji/"
-    baseURL=""
-   </script>
-   <script src="js/docsify.min.js"></script>
+  <script src="js/katex.min.js"></script>
+  <link rel="stylesheet" href="css/katex.min.css" />
+  <script src="js/marked@3.js"></script>
+  <script src="js/docsify-katex.js"></script>
+  <script>
+    baseURL = "https://github.githubassets.com/images/icons/emoji/"
+    baseURL = ""
+  </script>
+  <script src="js/docsify.min.js"></script>
 
 
   <!-- CDN files for docsify-katex -->
