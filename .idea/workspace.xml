@@ -4,7 +4,14 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="cac35705-187e-4502-afd9-2c9172f77a4c" name="Changes" comment="" />
+    <list default="true" id="cac35705-187e-4502-afd9-2c9172f77a4c" name="Changes" comment="">
+      <change beforePath="$PROJECT_DIR$/docs/chapter1/chapter1.md" beforeDir="false" afterPath="$PROJECT_DIR$/docs/chapter1/chapter1.md" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/docs/index.html" beforeDir="false" afterPath="$PROJECT_DIR$/docs/index.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/docs/sidebar.md" beforeDir="false" afterPath="$PROJECT_DIR$/docs/sidebar.md" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/org/bioproj/ListToTreeNode.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/org/bioproj/lcadl/ListToTreeNode.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/org/bioproj/Main.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/org/bioproj/lcadl/Main.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/org/bioproj/TreeNode.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/org/bioproj/lcadl/TreeNode.java" afterDir="false" />
+    </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
@@ -58,11 +65,11 @@
 }]]></component>
   <component name="RunManager">
     <configuration name="Main" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
-      <option name="MAIN_CLASS_NAME" value="org.bioproj.Main" />
+      <option name="MAIN_CLASS_NAME" value="org.bioproj.lcadl.Main" />
       <module name="java-algorithm.main" />
       <extension name="coverage">
         <pattern>
-          <option name="PATTERN" value="org.bioproj.*" />
+          <option name="PATTERN" value="org.bioproj.lcadl.*" />
           <option name="ENABLED" value="true" />
         </pattern>
       </extension>
@@ -91,7 +98,7 @@
     <breakpoint-manager>
       <breakpoints>
         <line-breakpoint enabled="true" type="java-line">
-          <url>file://$PROJECT_DIR$/src/main/java/org/bioproj/Main.java</url>
+          <url>file://$PROJECT_DIR$/src/main/java/org/bioproj/lcadl/Main.java</url>
           <line>36</line>
           <option name="timeStamp" value="3" />
         </line-breakpoint>

@@ -1,4 +1,4 @@
-package org.bioproj;
+package org.bioproj.lcadl;
 
 import lombok.Data;
 

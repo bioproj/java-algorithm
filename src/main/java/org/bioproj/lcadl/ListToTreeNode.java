@@ -1,4 +1,4 @@
-package org.bioproj;
+package org.bioproj.lcadl;
 
 import java.util.LinkedList;
 import java.util.List;
