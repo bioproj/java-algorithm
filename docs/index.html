@@ -33,6 +33,7 @@
         // DocsifyCarbon.create('CEBI6KQE', 'docsifyjsorg'),
         function (hook, vm) {
           hook.beforeEach(function (html) {
+            // console.log( vm.route.file)
             if (/githubusercontent\.com/.test(vm.route.file)) {
               url = vm.route.file
                 .replace('raw.githubusercontent.com', 'github.com')
@@ -41,7 +42,12 @@
               url = vm.route.file
                 .replace('cdn.jsdelivr.net/gh', 'github.com')
                 .replace('@master', '/blob/master');
-            } else {
+            } else if (/github\.githubassets\.com/.test(vm.route.file)) {
+              console.log( vm.route.file)
+              url = vm.route.file
+                .replace('cdn.jsdelivr.net/gh', 'github.com')
+                .replace('@master', '/blob/master');
+            }else {
               url =
                 'https://github.com/bioproj/java-algorithm/blob/master/docs/' +
                 vm.route.file;
@@ -77,6 +83,10 @@
    <link rel="stylesheet" href="css/katex.min.css" />
    <script src="js/marked@3.js"></script>
    <script src="js/docsify-katex.js"></script>
+   <script>
+    baseURL="https://github.githubassets.com/images/icons/emoji/"
+    baseURL=""
+   </script>
    <script src="js/docsify.min.js"></script>
 
 

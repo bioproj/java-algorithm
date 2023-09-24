@@ -1,4 +1,6 @@
 
 ## java algorithm
 
-online doc: <https://bioproj.github.io/java-algorithm/>
+online doc
++ github: <https://bioproj.github.io/java-algorithm>
++ gitee: <https://bioproj.gitee.io/java-algorithm>
