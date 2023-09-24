@@ -9,7 +9,7 @@
 
 
 
-## 问题描述
+## Algorithm description
 Given the `root`of a binary tree, return the lowest common ancestor of its deepest leaves.
 
 Recall that:
@@ -33,3 +33,10 @@ Explanation:
 ![](figures/lcadl.drawio.svg)
 
 
+
+## Explain what Krakan does?
+Kraken is a tools to labeling sequenced reads. It breaks reads into kmers. Then it looks up each of these kmers in a reference database, which was pre-computed alreadly from reference genomes.Whenever it finds a kmer match it takes over the taxonomical label from the database. 
+
+Once it has computed all of the kmers, so it found all of the taxonomic labels we can find. It places them into a taxonomic tree. So here you can see you have some orange, blue and red and so on. It then decides that the label of the query sequence will be the one that has the most support, like the heaviest pass in the taxonomical tree. Generally a kemr lookup followed by weighted tree search to given taxonomical lables.
+
+![](figures/2023-09-24-20-58-20.png)
